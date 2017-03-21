@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: testPkg\nType: Package\nTitle: test package for linking .hpp to multiple .cpp in Rcpp framework\nVersion: 0.1.0\nAuthor: Sean Wu/Chloe Tarrasch\nMaintainer: Sean Wu <slwu89@berkeley.edu>\nDescription: test package for linking .hpp to multiple .cpp in Rcpp framework\nLicense: MIT License\nEncoding: UTF-8\nImports: Rcpp\nLinkingTo: Rcpp, RcppGSL\nLazyData: true\n",
+    "created" : 1490110339067.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1626839079",
+    "id" : "103B7405",
+    "lastKnownWriteTime" : 1490110418,
+    "last_content_update" : 1490110418552,
+    "path" : "~/Desktop/testPkg/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

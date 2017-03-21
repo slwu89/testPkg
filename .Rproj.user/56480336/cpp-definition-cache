@@ -1,0 +1,65 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "/Users/slwu89/Desktop/testPkg/inst/include/sampleClass.h",
+                "kind" : 2,
+                "line" : 16,
+                "name" : "gslRNG",
+                "parent_name" : "",
+                "usr" : "c:@C@gslRNG"
+            },
+            {
+                "column" : 17,
+                "file" : "/Users/slwu89/Desktop/testPkg/inst/include/sampleClass.h",
+                "kind" : 7,
+                "line" : 28,
+                "name" : "runif(int)",
+                "parent_name" : "gslRNG",
+                "usr" : "c:@C@gslRNG@F@runif#I#"
+            },
+            {
+                "column" : 17,
+                "file" : "/Users/slwu89/Desktop/testPkg/inst/include/sampleClass.h",
+                "kind" : 7,
+                "line" : 39,
+                "name" : "rpois(int, double)",
+                "parent_name" : "gslRNG",
+                "usr" : "c:@C@gslRNG@F@rpois#I#d#"
+            }
+        ],
+        "file" : "/Users/slwu89/Desktop/testPkg/inst/include/sampleClass.h",
+        "file_last_write" : 1490113179
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 15,
+                "file" : "/Users/slwu89/Desktop/testPkg/src/rpoisCpp.cpp",
+                "kind" : 6,
+                "line" : 10,
+                "name" : "rpoisVector(int, int, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@rpoisVector#I#I#d#"
+            }
+        ],
+        "file" : "/Users/slwu89/Desktop/testPkg/src/rpoisCpp.cpp",
+        "file_last_write" : 1490113257
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 15,
+                "file" : "/Users/slwu89/Desktop/testPkg/src/runifCpp.cpp",
+                "kind" : 6,
+                "line" : 10,
+                "name" : "runifVector(int, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@runifVector#I#I#"
+            }
+        ],
+        "file" : "/Users/slwu89/Desktop/testPkg/src/runifCpp.cpp",
+        "file_last_write" : 1490112804
+    }
+]

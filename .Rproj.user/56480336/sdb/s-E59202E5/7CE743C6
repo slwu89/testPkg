@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#include <RcppGSL.h>\n#include <gsl/gsl_rng.h>\n#include <gsl/gsl_randist.h>\n#include \"sampleClass.h\"\nusing namespace Rcpp;\n\n// [[Rcpp::depends(RcppGSL)]]\n\n// [[Rcpp::export]]\nIntegerVector rpoisVector(int n, int seed, double mu){\n\n  gslRNG rpoisSampler(seed);\n\n  IntegerVector out = rpoisSampler.rpois(n,mu);\n\n  return(out);\n}\n",
+    "created" : 1490113244543.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1452552187",
+    "id" : "7CE743C6",
+    "lastKnownWriteTime" : 1490113323,
+    "last_content_update" : 1490113323,
+    "path" : "~/Desktop/testPkg/src/rpoisCpp.cpp",
+    "project_path" : "src/rpoisCpp.cpp",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

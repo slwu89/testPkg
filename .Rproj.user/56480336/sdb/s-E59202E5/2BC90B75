@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#ifndef sampleClass_H\n#define sampleClass_H\n\n#include <RcppGSL.h>\n#include <gsl/gsl_rng.h>\n#include <gsl/gsl_randist.h>\nusing namespace Rcpp;\n\n// [[Rcpp::depends(RcppGSL)]]\n\n/*\n * Definition of a sample class to test linking one .h to multiple .cpp\n * February 15, 2017\n */\n\nclass gslRNG {\npublic:\n\n  // constructors\n  gslRNG(int seed): seedAttr(seed) {};\n\n  // class attributes\n  int seedAttr;\n\n  // class methods\n\n  // draw rng from U(0,1)\n  NumericVector runif(int n){\n    gsl_rng *r = gsl_rng_alloc(gsl_rng_mt19937);\n    gsl_rng_set(r,seedAttr);\n    NumericVector out(n);\n    for(int i=0; i<n; i++){\n      out[i] = gsl_ran_flat(r,0.0,1.0);\n    }\n    return(out);\n  }\n\n  // drawn rng from pois(lambda=mu)\n  IntegerVector rpois(int n, double mu){\n    gsl_rng *r = gsl_rng_alloc(gsl_rng_mt19937);\n    gsl_rng_set(r,seedAttr);\n    IntegerVector out(n);\n    for(int i=0; i<n; i++){\n      out[i] = gsl_ran_poisson(r,mu);\n    }\n    return(out);\n  }\n\n}; // end class definition\n\n#endif /* sampleClass_H */\n",
+    "created" : 1490112114280.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "397380938",
+    "id" : "2BC90B75",
+    "lastKnownWriteTime" : 1490113179,
+    "last_content_update" : 1490113179,
+    "path" : "~/Desktop/testPkg/inst/include/sampleClass.h",
+    "project_path" : "inst/include/sampleClass.h",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "h"
+}
